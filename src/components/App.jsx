@@ -1,16 +1,12 @@
+import { PageTitle  } from "components/PageTitle/PageTitle";
+import { EventsBoard  } from "components/EventsBoard/EventsBoard";
+import upcomingEvents from "upcoming-events.json"
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React 
-    </div>
+    <>
+      <PageTitle text="International Conference of Young Mathematicians"/>
+      <EventsBoard events={upcomingEvents}/>
+    </>
   );
 };
